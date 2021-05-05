@@ -4,6 +4,9 @@ A simple Deteriministic ProcessPoolExcecutor for Python 3.7+
 The built-in ProcessPoolExecutor can wake processes in any order.
 This one wakes them in the same order as they were submitted.
 
+### Installation
+Download the `deterministic.py` file and keep it in the same folder as the file you're importing it from.
+
 ### Usage
 Here is an example to make multiple webrequests with `wget`.
 
@@ -54,3 +57,7 @@ you can also do that while the pool is running.
 
 Maximum Concurrency of the pool can be increased, but cannot be decreased.
 It should be trivial to implement that though, I might do that later.
+
+### Public Domain
+
+This library and it's documentation are [Public Domain](./LICENSE). Go nuts.

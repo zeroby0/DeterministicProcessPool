@@ -70,7 +70,7 @@ class DeterministicTask():
         pass
     
     def on_launch(self):
-        raise raise NotImplementedError
+        raise NotImplementedError
 
     def on_success(self):
         raise NotImplementedError

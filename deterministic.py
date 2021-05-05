@@ -77,13 +77,3 @@ class DeterministicTask():
 
     def on_error(self):
         raise NotImplementedError
-
-
-
-
-        
-
-
-
-    
-

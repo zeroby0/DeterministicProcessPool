@@ -58,6 +58,6 @@ you can also do that while the pool is running.
 Maximum Concurrency of the pool can be increased, but cannot be decreased.
 It should be trivial to implement that though, I might do that later.
 
-### Public Domain
+### License
 
 This library and it's documentation are [Public Domain](./LICENSE). Go nuts.

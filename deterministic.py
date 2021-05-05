@@ -38,7 +38,7 @@ class DeterministicPool():
                 # Call the success handler.
                 task.on_success()
         
-        # Some processes could finish while we write,
+        # Some processes could finish while we call hooks,
         # and they will be handled in the next tick.
         self.tasks_current = [task_poll[0] for task_poll in task_polls if task_poll[1] is None]
 
@@ -50,10 +50,8 @@ class DeterministicPool():
 
             task.process = subprocess.Popen(
                 task.command,
-                # uncomment below line if you want stdout from created processes
-                # to be printed to the Terminal
-                # stdout=subprocess.PIPE, 
-                stderr=subprocess.PIPE,
+                stdout=subprocess.PIPE,   # If you comment this, stdout will be printed to the terminal
+                # stderr=subprocess.PIPE, # If you uncomment this, stderr wont be printed to the terminal
                 universal_newlines=True,
                 bufsize=0
             )
